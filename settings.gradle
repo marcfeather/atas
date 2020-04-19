@@ -1,0 +1,3 @@
+rootProject.name='OxooApp'
+include ':app'
+include ':oxoospagreen'
