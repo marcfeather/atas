@@ -19,7 +19,7 @@ public class MyApp extends Application {
 
     @Override
     public String packageName() {
-        return null;
+        return BuildConfig.APPLICATION_ID;
     }
 
 
