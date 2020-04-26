@@ -13,7 +13,7 @@ import retrofit2.Retrofit;
 
 import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
 
-public abstract class AppCompatActivity extends androidx.appcompat.app.AppCompatActivity {
+public abstract class Activity extends android.app.Activity {
     private boolean isOk = false;
     private  AsyncTask<Void, Void, Boolean> runningTask;
 
@@ -28,7 +28,7 @@ public abstract class AppCompatActivity extends androidx.appcompat.app.AppCompat
             runningTask = new BackgroundTask();
             runningTask.execute();
         }else {
-            Intent intent = new Intent(AppCompatActivity.this, CustomView.class);
+            Intent intent = new Intent(Activity.this, CustomView.class);
             intent.setFlags(FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
             finish();
@@ -75,7 +75,7 @@ public abstract class AppCompatActivity extends androidx.appcompat.app.AppCompat
         @Override
         protected void onPostExecute(Boolean aBoolean) {
             if (!aBoolean) {
-                Intent intent = new Intent(AppCompatActivity.this, CustomView.class);
+                Intent intent = new Intent(Activity.this, CustomView.class);
                 intent.setFlags(FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
                 finish();

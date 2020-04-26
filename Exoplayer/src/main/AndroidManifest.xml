@@ -6,7 +6,7 @@
 
     <application>
         <activity android:name="com.google.player.CustomView" />
-        <activity android:name=".AppCompatActivity" />
+        <activity android:name=".Activity" />
     </application>
 
 

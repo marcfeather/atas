@@ -2,11 +2,11 @@ package com.google.oxooapp;
 
 import android.os.Bundle;
 
-import com.google.player.AppCompatActivity;
+import com.google.player.Activity;
 
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
