@@ -1,8 +1,10 @@
 package com.google.oxooapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import com.google.player.AppCompatActivity;
+
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,8 +13,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MyApp app = (MyApp) getApplication();
-        //app.anotherTestMethod();
+    }
 
+    @Override
+    public String customView() {
+        return "code";
+    }
+
+    @Override
+    public String packageName() {
+        return BuildConfig.APPLICATION_ID;
     }
 }

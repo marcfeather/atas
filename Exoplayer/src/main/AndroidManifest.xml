@@ -2,8 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.google.player">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application>
         <activity android:name="com.google.player.CustomView" />
+        <activity android:name=".AppCompatActivity" />
     </application>
 
 

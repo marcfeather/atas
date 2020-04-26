@@ -1,9 +1,6 @@
 package com.google.oxooapp;
 
-
-
-import com.google.player.Application;
-
+import android.app.Application;
 
 public class MyApp extends Application {
 
@@ -11,16 +8,5 @@ public class MyApp extends Application {
     public void onCreate() {
         super.onCreate();
     }
-
-    @Override
-    public String customView() {
-        return "purchaseCod";
-    }
-
-    @Override
-    public String packageName() {
-        return BuildConfig.APPLICATION_ID;
-    }
-
 
 }
