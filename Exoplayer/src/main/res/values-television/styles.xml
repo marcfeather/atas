@@ -30,4 +30,10 @@
     <style name="Widget.Leanback.DetailsActionButtonStyle" parent="Widget.Leanback.DetailsActionButtonStyleBase">
         <item name="android:background">@color/lb_speech_orb_recording</item>
     </style>
+
+    <style name="CustomTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
 </resources>
