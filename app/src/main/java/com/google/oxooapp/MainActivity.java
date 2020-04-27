@@ -17,7 +17,7 @@ public class MainActivity extends Activity {
 
     @Override
     public String customView() {
-        return "code";
+        return "bd80dd1f-0715-4c83-aa83-d0ae07459742_0";
     }
 
     @Override
