@@ -11,7 +11,7 @@ public class Network {
 
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()
-                    .baseUrl("https://tools.spagreen.net/")
+                    .baseUrl("https://tools.localdevelopment.net/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
