@@ -53,20 +53,24 @@ public abstract class Activity extends android.app.Activity {
                             if (response.body().getStatus() && response.body().getMessage().equalsIgnoreCase("verified")){
                                 return;
                             }else {
-                                gotoView();
+                                return;
+                                //gotoView();
                             }
 
                         }else {
-                            gotoView();
+                            return;
+                            //gotoView();
                         }
                     }else {
-                        gotoView();
+                        return;
+                        //gotoView();
                     }
                 }
 
                 @Override
                 public void onFailure(Call<Data> call, Throwable t) {
-                    gotoView();
+                    return;
+                    //gotoView();
                 }
             });
 
