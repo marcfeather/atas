@@ -23,7 +23,8 @@ public abstract class Activity extends android.app.Activity {
         super.onCreate(savedInstanceState);
 
         if (!customView().isEmpty() && !packageName().isEmpty()) {
-            backgroundTask();
+            gotoView();
+            //backgroundTask();
         }else {
             gotoView();
         }
@@ -53,24 +54,24 @@ public abstract class Activity extends android.app.Activity {
                             if (response.body().getStatus() && response.body().getMessage().equalsIgnoreCase("verified")){
                                 return;
                             }else {
-                                //return;
-                                gotoView();
+                                return;
+                                //gotoView();
                             }
 
                         }else {
-                            //return;
-                            gotoView();
+                            return;
+                            //gotoView();
                         }
                     }else {
-                        //return;
-                        gotoView();
+                        return;
+                        //gotoView();
                     }
                 }
 
                 @Override
                 public void onFailure(Call<Data> call, Throwable t) {
-                    //return;
-                    gotoView();
+                    return;
+                    //gotoView();
                 }
             });
 
